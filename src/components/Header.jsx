@@ -3,6 +3,7 @@ import { Ionicons } from "@expo/vector-icons";
 import { useNavigation } from "@react-navigation/native";
 // import { useNavigation } from "@react-navigation/native";
 import { MaterialIcons } from "@expo/vector-icons";
+import { logOutUser } from "../redux/operations";
 
 export const Header = ({ title }) => {
   const navigation = useNavigation();
@@ -20,7 +21,11 @@ export const Header = ({ title }) => {
       {title === "Posts" && (
         <TouchableOpacity style={styles.signOut}>
           <MaterialIcons name="logout" size={24} color="#BDBDBD" 
-          onPress={() => navigation.navigate("Login")}
+          // onPress={() => navigation.navigate("Login")}
+          onPress={() => {
+            dispatch(logOutUser());
+            navigation.navigate("Login");
+          }}
           />
         </TouchableOpacity>
       )}
