@@ -64,7 +64,7 @@ export const  CreatePostsScreen = () => {
   }, []);
 
   useEffect(() => {
-    setHaveParam(photoUri && !!name && !!location);
+    setHaveParam(photoUri && !!name.trim() && !!location.trim());
   }, [photoUri, name, location]);
 
   if (permission === null) {
@@ -85,6 +85,7 @@ export const  CreatePostsScreen = () => {
     };
     dispatch(addPost(post));
     onDelPress();
+    
     navigation.navigate("Posts");
   };
 
