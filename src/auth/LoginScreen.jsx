@@ -16,7 +16,7 @@ import { updateUserData } from "../redux/slice";
 import { onAuthStateChanged } from "firebase/auth";
 import { auth } from "../firebase/config";
 import { getUserData } from "../firebase/firestore";
-import { loginUser } from "../redux/operation";
+import { loginUser } from "../redux/operations";
 import { useEffect } from "react";
 
 export const LoginScreen = () => {

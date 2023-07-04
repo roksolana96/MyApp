@@ -1,7 +1,7 @@
 import AsyncStorage from "@react-native-async-storage/async-storage";
 import { useNavigation } from "@react-navigation/native";
 import { initializeApp } from "firebase/app";
-import { getAuth, initializeAuth, signOut,getReactNativePersistence } from "firebase/auth";
+import { initializeAuth,getReactNativePersistence } from "firebase/auth";
 import { decode } from "base-64";
 import { getFirestore } from "firebase/firestore";
 import { getStorage } from "firebase/storage";
@@ -20,7 +20,6 @@ const firebaseConfig = {
   messagingSenderId: "919728903390",
   appId: "1:919728903390:web:b449198951ce57e5e01e4f",
   measurementId: "G-6C61HNJKES"
-
 };
 
 const app = initializeApp(firebaseConfig);

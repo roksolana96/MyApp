@@ -12,7 +12,7 @@ import { useNavigation } from "@react-navigation/native";
 import { useDispatch, useSelector } from "react-redux";
 import {Post} from "../components/Post";
 import { getFilteredPosts, getUser } from "../redux/selectors";
-import { logOutUser } from "../redux/operation";
+import { logOutUser } from "../redux/operations";
 
 export const ProfileScreen = () => {
   const dispatch = useDispatch();

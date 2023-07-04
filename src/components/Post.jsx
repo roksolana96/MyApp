@@ -4,7 +4,7 @@ import { AntDesign } from "@expo/vector-icons";
 import { useNavigation } from "@react-navigation/native";
 import { useDispatch, useSelector } from "react-redux";
 import { getEmail } from "../redux/selectors";
-import { addLike, delPost } from "../redux/operation";
+import { addLike, delPost } from "../redux/operations";
 
 export const Post = ({ data }) => {
   const navigation = useNavigation();

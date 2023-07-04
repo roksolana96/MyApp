@@ -13,3 +13,6 @@ export const setStorage = async ({ folder, creationTime, file }) => {
   const url = await getDownloadURL(snapshot.ref);
   return url;
 };
+
+
+

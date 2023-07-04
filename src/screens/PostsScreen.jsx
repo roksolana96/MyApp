@@ -9,7 +9,7 @@ import { Post } from "../components/Post";
 import { useDispatch, useSelector } from "react-redux";
 import { useEffect } from "react";
 import { getPosts, getUser } from "../redux/selectors";
-import { getAllPosts } from "../redux/operation";
+import { getAllPosts } from "../redux/operations";
 import { Header } from "../components/Header";
 
 export const PostsScreen = () => {

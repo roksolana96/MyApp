@@ -16,7 +16,7 @@ import { AntDesign } from "@expo/vector-icons";
 import { useState } from "react";
 import { useNavigation } from "@react-navigation/native";
 import { useDispatch } from "react-redux";
-import { createUser } from "../redux/operation";
+import { createUser } from "../redux/operations";
 import { useEffect } from "react";
 import { Camera } from "expo-camera";
 import * as MediaLibrary from "expo-media-library";

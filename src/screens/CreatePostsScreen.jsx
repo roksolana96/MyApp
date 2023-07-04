@@ -22,7 +22,7 @@ import * as Location from "expo-location";
 import { useIsFocused, useNavigation } from "@react-navigation/native";
 import { useDispatch, useSelector } from "react-redux";
 import { getEmail } from "../redux/selectors";
-import { addPost } from "../redux/operation";
+import { addPost } from "../redux/operations";
 import * as ImagePicker from "expo-image-picker";
 import { Header } from "../components/Header";
 
@@ -35,6 +35,7 @@ export const  CreatePostsScreen = () => {
   const [location, setLocation] = useState("");
   const [geoLocation, setGeoLocation] = useState(null);
   const [haveParam, setHaveParam] = useState(false);
+
   const focused = useIsFocused();
 
   const navigation = useNavigation();

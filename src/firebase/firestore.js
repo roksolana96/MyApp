@@ -11,6 +11,7 @@ import {
   arrayUnion,
 } from "firebase/firestore";
 
+
 export const registerUser = async ({ url, login, email, uid }) => {
   const db_obj = { login, email, url };
   try {

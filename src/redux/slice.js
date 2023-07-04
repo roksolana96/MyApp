@@ -10,7 +10,7 @@ import {
   delPost,
   addComment,
   addLike,
-} from "./operation";
+} from "./operations";
 
 export const postsSlice = createSlice({
   name: "posts",

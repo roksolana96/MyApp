@@ -4,7 +4,7 @@ import { Comment } from "../components/Comment";
 import { AntDesign } from "@expo/vector-icons";
 import { useDispatch, useSelector } from "react-redux";
 import { getPost, getUser } from "../redux/selectors";
-import { addComment } from "../redux/operation";
+import { addComment } from "../redux/operations";
 import { Header } from "../components/Header";
 
 export const CommentsScreen = ({ route }) => {
