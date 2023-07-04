@@ -11,6 +11,7 @@ import { useEffect } from "react";
 import { getPosts, getUser } from "../redux/selectors";
 import { getAllPosts } from "../redux/operations";
 import { Header } from "../components/Header";
+// import { logOutUser } from "../redux/operations";
 
 export const PostsScreen = () => {
   const dispatch = useDispatch();
@@ -20,6 +21,7 @@ export const PostsScreen = () => {
   useEffect(() => {
     dispatch(getAllPosts());
   }, []);
+
 
   return (
     <>
